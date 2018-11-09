@@ -1,0 +1,7 @@
+{
+  "name": "now-builders",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^3.4.3"
+  }
+}
