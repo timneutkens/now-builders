@@ -19,7 +19,6 @@ function excludeFiles(files, matchFn) {
 }
 
 exports.build = async ({ files, workPath, entrypoint }) => {
-  // @now/next only works with package.json and next.config.js as source
   if(!/package\.json$/.exec(entrypoint) && !/next\.config\.js$/.exec(entrypoint)) {
     throw new Error(`Specified "src" for "@now/next" has to be "package.json" or "next.config.js"`)
   }
